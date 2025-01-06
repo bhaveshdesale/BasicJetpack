@@ -50,7 +50,9 @@ android {
 }
 
 dependencies {
-
+// for this app we have to use bom version and also have to add navigation library
+    implementation("androidx.compose:compose-bom:2024.09.00")
+    implementation("androidx.navigation:navigation-compose:2.8.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
